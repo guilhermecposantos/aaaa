@@ -296,7 +296,7 @@
                 title="Página de Guilherme Cortes Pina Oliveira Santos"
                 id="profile-name"
                 class="nome"
-                >Guilherme Cortes Pina Oliveira Santos</a
+                >Ana Miguel Fernandes Ferreira</a
               >
               <a
                 href="vld_entidades_geral.entidade_pagina?pct_id=2092909"
@@ -904,7 +904,7 @@
           <div id="conteudoinner">
             <h1 id="seccao"></h1>
             <a name="ancora-conteudo" class="ecra"></a>
-            <h1 id="profile-name3">Guilherme Cortes Pina Oliveira Santos</h1>
+            <h1 id="profile-name3">Ana Miguel Fernandes Ferreira</h1>
             <style>
               .close {
                 opacity: 1 !important;
@@ -1218,7 +1218,7 @@
                
               }
 
-              function changeProfile(num, newName) {
+              function changeProfile(num, newName, newNum, newCourse) {
                 document.getElementById(
                   "profile-pic"
                 ).src = `feup/pt/imagens/fotografia${num}.png`;
@@ -1229,6 +1229,9 @@
                 document.getElementById("profile-name1").textContent = newName;
                 document.getElementById("profile-name2").textContent = newName;
                 document.getElementById("profile-name3").textContent = newName;
+                document.getElementById("numero_estudante").textContent = newNum;
+                document.getElementById("numero_mail").textContent = newNum;
+                document.getElementById("curso_nome").textContent = newCourse;
               }
             </script>
             <div class="container-fluid">
@@ -1245,7 +1248,7 @@
                 </div>
                 <div class="col-md-10 col-sm-9 col-xs-12">
                   <div id="profile-name1" class="estudante-info-nome">
-                    Guilherme Cortes Pina Oliveira Santos
+                    Ana Miguel Fernandes Ferreira
                   </div>
                   <div class="menu-contexto-principal">
                     <img
@@ -1265,8 +1268,9 @@
                       height="30"
                     />
                   </div>
-                  <div class="estudante-info-numero">
-                    <a>202105090</a>
+                  <div id="numero_estudante" class="estudante-info-numero">
+                    <a>202106795
+                    </a>
                   </div>
                   <div class="estudante-info-email">
                     <script
@@ -1282,9 +1286,10 @@
                       <label>Email institucional</label>
                       <span>
                         <a
-                          href=""
                           onclick="secure='@'; this.href='ma'+'i'+'lto'+':up202105090'+secure+'edu.fe.up.pt'"
-                          >up202105090<img
+                          ><a id="numero_mail">
+                            up202106795
+                          </a><img
                             src="./feup/pt/imagens/Arroba.gif"
                             alt="@"
                             title=""
@@ -1501,7 +1506,7 @@
                     /></a>
                   </div>
                   <div class="estudante-lista-curso-nome">
-                    <a>Licenciatura em Engenharia Informática e Computação</a>
+                    <a id="curso_nome">Licenciatura em Engenharia Mecânica</a>
                   </div>
                   <div class="estudante-lista-curso-instit">
                     Faculdade de Engenharia
@@ -1730,23 +1735,23 @@
     <div class="button-container">
       <button
         style="width: 1; height: 1"
-        onclick="changeProfile(1, 'Eduardo Maravilha Ribeiro')"
+        onclick="changeProfile(1, 'Ana Miguel Fernandes Ferreira', '202106795', 'Licenciatura em Engenharia Mecânica')"
       ></button>
       <button
         style="width: 1; height: 1"
-        onclick="changeProfile(2, 'António Filipe Ferreira Silva')"
+        onclick="changeProfile(2, 'Teresa Lapa', '202106867', 'Licenciatura em Engenharia Informática e Computação')"
       ></button>
       <button
         style="width: 1; height: 1"
-        onclick="changeProfile(3, 'Natacha Filipa Ribeiro')"
+        onclick="changeProfile(3, 'Natacha Filipa Ribeiro', '202106796', 'Licenciatura em Engenharia Informática')"
       ></button>
       <button
         style="width: 1; height: 1"
-        onclick="changeProfile(4, 'Maria Botelho Soares')"
+        onclick="changeProfile(4, 'Maria Botelho Soares', '202106797', 'Licenciatura em Engenharia Mecânica')"
       ></button>
       <button
         style="width: 1; height: 1"
-        onclick="changeProfile(5, 'Diana Gouveia Pinheiro')"
+        onclick="changeProfile(5, 'Diana Gouveia Pinheiro', '202106598', 'Licenciatura em Engenharia Informática')"
       ></button>
     </div>
   </body>
